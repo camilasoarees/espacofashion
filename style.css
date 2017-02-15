@@ -1,0 +1,108 @@
+body{
+	padding: 50px;
+	background: #8B475D;
+  margin: 0px;
+  display: flex;
+}
+header{
+  display: flex;
+}
+.logo{
+  height: 100%;
+}
+main {
+  display: flex;
+  position: relative;
+  top: 70px;
+}
+#container-menu ul {
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: -20px;
+}
+
+#container-menu {
+	position: absolute;
+}
+
+#container-menu a{
+	display: inline;
+
+}
+
+#container-menu li{
+	display: inline;
+}
+
+#container-menu ul li a:hover {
+  bottom: 5px;
+  border-top: 2px solid #00CD00;
+}
+
+#container-menu ul li a {
+  text-decoration: none;
+  position: relative;
+  color: #00CD00;
+  padding: 10px 30px;
+  font-size: 30px;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  margin: 0px;
+  box-shadow: 0px 1px 1px #CDCDB4;
+  font-family: 'Droid Sans', sans-serif;
+}
+
+@keyframes slide {
+0%  { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+
+.slider {
+  overflow: hidden;
+}
+.slider figure img {
+  width: 20%; 
+  float: left;
+}
+.slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  /*font-size: 0;*/
+  animation: 10s slide infinite; 
+}
+ 
+/*.slider{
+  overflow: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider figure img {
+  width: 80%;
+  float: left;
+}
+
+.slider figure { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: slide 15s infinite; 
+}
+*/
