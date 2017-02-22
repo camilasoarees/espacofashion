@@ -1,4 +1,8 @@
 @import  url(href="https://fonts.googleapis.com/css?family=Cousine|Open+Sans" rel="stylesheet");
+*{
+  padding: 0px;
+}
+
 body{
 	padding: 0px;
 	/*background: #8B2252;*/
@@ -9,6 +13,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100%;
 }
 header{
   display: flex;
@@ -28,6 +33,13 @@ main {
   position: relative;
   top: 55px;
 }
+#container-menu {
+  position: absolute;
+  display: inline;
+  top: 100px;
+  text-decoration: none;
+
+}
 #container-menu ul {
   position: relative;
   margin-bottom: 20px;
@@ -36,13 +48,7 @@ main {
   display:inline;
 }
 
-#container-menu {
-	position: absolute;
-  display: inline;
-  /*background: #fff;*/
-  top: 100px;
 
-}
 
 #container-menu a{
 	display: inline;
@@ -51,7 +57,7 @@ main {
 
 #container-menu li{
 	display: inline;
-  margin: 10px;
+  margin: 5px;
 }
 
 #container-menu ul li a:hover {
@@ -123,9 +129,8 @@ main {
   color: #fff;
 }
 
-
 footer{
-  font-size: 30px;
+  font-size: 25px;
   color: #00cd00;
   position: fixed;
   width:  100%;
@@ -134,4 +139,78 @@ footer{
 }
 footer a{
   color: #8B3A3A;
+  text-decoration: none;
 }
+
+@media (max-width: 800px) {
+  header {
+    flex-direction: column;
+  }
+  
+  #container-menu ul li a {
+    font-size: 25px;
+  }
+  footer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  
+  #container-menu li{
+    margin: 0px;
+  }
+  #container-menu ul {
+    margin-left: 85px;
+  }
+  #container-menu ul li a {
+    font-size: 18px;
+    padding: 20px;
+  }
+  footer {
+    font-size: 16px;
+  }
+}
+.test{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact{
+  /*background: blue;*/
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  top: 90px;
+  text-align: center;
+  color: #00cd00;
+
+}
+.contact ul {
+  list-style-type: none;
+}
+
+.contact ul li a {
+  text-decoration: none;
+}
+
+.contact a {
+  color: #8B3A3A;
+}
+
+@media (max-width: 400px) {
+  
+  #container-menu li{
+    margin: 5px;
+  }
+  
+  #container-menu ul li a {
+    font-size: 20px;
+  }
+
+  footer {
+    font-size: 18px;
+  }
